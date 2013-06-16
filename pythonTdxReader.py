@@ -64,7 +64,7 @@ def Read5MKLine(fpath):
 
 def ReadKLineFile(fpath, f, type):
     file = open(fpath, 'rb')
-    year,month,day,hour,minute,second,open,high,low,close,amount,volumn=struct.unpack('H5c5f')
+    year,month,day,hour,minute,second,open,high,low,close,amount,volumn=struct.unpack('H5c5f1d')
     return
 
 if __name__ == '__main__':
